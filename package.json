@@ -1,0 +1,28 @@
+{
+  "name": "blogr_landing_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.congif.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EugeneCarbado/blogr_landing_page.git"
+  },
+  "keywords": [],
+  "author": "Eugene Carbado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EugeneCarbado/blogr_landing_page/issues"
+  },
+  "devDependencies":{
+    "webpack-dev-server": "^3.11.0"
+  },
+  "homepage": "https://github.com/EugeneCarbado/blogr_landing_page#readme",
+  "dependencies": {
+    "webpack": "^5.31.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
