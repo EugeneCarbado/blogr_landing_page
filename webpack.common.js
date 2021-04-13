@@ -1,7 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 
 module.exports = {
@@ -10,7 +9,10 @@ module.exports = {
         path: path.resolve(__dirname, "dist")
     },
     devtool: 'source-map',
-    entry: './src/js/index.js',
+    entry: {
+        main: "./src/js/index.js",
+        vendor: "./src/vendor.js"
+    },
     module: {
         rules: [
             {
@@ -22,24 +24,26 @@ module.exports = {
                 test: /\.scss$/,
                 use: ['style-loader', 'css-loader', 'sass-loader']
             },
+            {
+                test: /\.html$/,
+                use: ["html-loader"]
+            },
+            {
+                test: /\.(svg|png|jpeg|gif)$/,
+                use: {
+                    loader: "file-loader",
+                    options: {
+                        name: "[name].[hash][ext]",
+                        outputPath: "imgs"
+                    }
+                }
+            }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/index.html",
             filename: "./index.html",
-        }),
-        new CleanWebpackPlugin({
-            // Simulate the removal of files
-            dry: true,
-            // Write Logs to Console
-            verbose: true,
-            // Automatically remove all unused webpack assets on rebuild
-            cleanStaleWebpackAssets: true,
-            protectWebpackAssets: false
-    }),
-        
+        }),   
     ]
-    
-
 }
