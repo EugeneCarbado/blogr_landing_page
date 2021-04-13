@@ -1,3 +1,8 @@
-body {
-    background: red;
+@import './colours.scss';
+
+.header__container {
+    background: url("../images/bg-pattern-intro.svg") left top no-repeat;
+    background-size: 100px 100px;
+    height: 100px;
+    display: block;
 }

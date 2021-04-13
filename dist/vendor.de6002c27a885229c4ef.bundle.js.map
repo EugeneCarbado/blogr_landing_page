@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://blogr_landing_page/./src/vendor.js"],"names":["alert"],"mappings":"AAAAA,MAAM","file":"vendor.de6002c27a885229c4ef.bundle.js","sourcesContent":["alert(\"Hi from vendor.js\");"],"sourceRoot":""}
