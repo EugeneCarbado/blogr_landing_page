@@ -1,8 +1,28 @@
 @import './colours.scss';
 
 .header__container {
-    background: url("../images/bg-pattern-intro.svg") left top no-repeat;
-    background-size: 100px 100px;
-    height: 100px;
-    display: block;
+    background: url("../images/bg-pattern-intro.svg") left top no-repeat, linear-gradient($vltred2, $ltred2);
+    background-size: 80rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 0 0 5rem;
+    background-position: 34% 33%;
+}
+
+.nav__container {
+    padding: 3rem 1.5rem;
+    
+}
+
+.blogr__logo {
+    background: url("../images/logo.svg") no-repeat;
+    height: 20vw;
+}
+
+.hamburger {
+    background: url("../images/icon-hamburger.svg") no-repeat;
+    height: 20vw;
+}
+
+.nav__bar {
 }
