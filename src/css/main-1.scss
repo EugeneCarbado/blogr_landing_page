@@ -1,0 +1,50 @@
+/* 
+
+font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif; 
+
+*/
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 900px;
+
+@import './colours.scss';
+
+.main_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+    margin-top: 6rem;
+
+    h2 {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 3rem 4rem 1rem 4rem;
+        line-height: 1.8rem;
+    }
+
+    p {
+        text-align: center;
+        color: $greyishblue2;
+        font-size: 1.1rem;
+        margin: 1rem 1.8rem 1rem 1.8rem;
+        line-height: 1.8rem;
+    }
+}
+
+.sqiggle_box {
+    background-image: url("../images/illustration-editor-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center ;
+    margin: 0 auto;
+    width: 23rem;
+    height: 21rem;
+
+    @media (max-width: 370px) {
+        margin: 0 auto;
+        background-size: contain;
+        width: 16rem;
+        height: 14rem;
+    }
+}

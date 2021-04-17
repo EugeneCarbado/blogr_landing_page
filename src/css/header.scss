@@ -20,8 +20,9 @@ header {
 .header__container {
     background: url("../images/bg-pattern-intro.svg") left top no-repeat;
     background-size: 90rem;
+    margin: 0 auto;
     height: 100%;
-    width: 100%;
+    max-width: 1200px;
     background-position: 38% 33%;
     border-radius: 0 0 0 5rem;
     font-family: 'Ubuntu', sans-serif;
@@ -140,7 +141,7 @@ header {
 
         h1 {
             font-size: 2.2rem;
-            margin: 0 1.7rem 1.5rem 1.7rem;
+            margin: 0 1.6rem 1.5rem 1.6rem;
             font-weight: 600;
             line-height: 2.7rem;
         }

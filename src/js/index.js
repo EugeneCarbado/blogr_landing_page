@@ -1,3 +1,4 @@
-import "../css/main.scss";
+import "../css/header.scss";
+import "../css/main-1.scss"
 import "../css/reset.scss";
 import "../css/colours.scss";
