@@ -5,6 +5,9 @@ font-family: 'Ubuntu', sans-serif;
 
 */
 
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 900px;
+
 @import './colours.scss';
 
 header {
@@ -16,15 +19,16 @@ header {
 
 .header__container {
     background: url("../images/bg-pattern-intro.svg") left top no-repeat;
-    background-size: 80rem;
+    background-size: 90rem;
     height: 100%;
     width: 100%;
-    background-position: 34% 33%;
+    background-position: 38% 33%;
     border-radius: 0 0 0 5rem;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .nav {
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 4rem 1.5rem 1.5rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,6 +47,7 @@ header {
 }
 
 .nav__bar {
+    display: none;
     position: absolute;
     background: $white;
     height: auto;
@@ -55,7 +60,6 @@ header {
 }
 
 .nav_head_title {
-    font-family: 'Ubuntu', sans-serif;
     text-align: center;
     padding: 1.5rem;
     font-size: 1.3rem;
@@ -63,7 +67,6 @@ header {
 
 .sub_item {
     margin: 0 auto;
-    font-family: 'Ubuntu', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,7 +108,6 @@ header {
     text-decoration: none;
     color: $vdrblackblue;
     font-size: 1.3rem;
-    font-family: 'Ubuntu', sans-serif;
     margin: 1rem;
 }
 
@@ -118,10 +120,69 @@ header {
     margin: 1rem;
     width: 10rem;
     height: 3.5rem;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 1.3rem;
     font-weight: 500;
     color: $white;
     background: linear-gradient(to right, $vltred2, $ltred2);
     border-radius: 2rem;
+}
+
+.hero__section {
+    font-family: 'Overpass', sans-serif;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $white;
+
+    .headers {
+        text-align: center;
+
+        h1 {
+            font-size: 2.2rem;
+            margin: 0 1.7rem 1.5rem 1.7rem;
+            font-weight: 600;
+            line-height: 2.7rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 0 1.6rem 0 1.6rem;
+            line-height: 1.3rem;
+        }
+    }
+}
+
+.main__buttons {
+    margin-top: 3rem;
+
+    .start_for_free {
+        margin: 0.5rem;
+        text-decoration: none;
+        background-color: $white;
+        color: $ltred2;
+        width: 8.7rem;
+        height: 2.8rem;
+        border: none;
+        border-radius: 2rem;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .learn_more {
+        margin: 0.5rem;
+        width: 8.7rem;
+        height: 2.8rem;
+        border: 1px solid $white;
+        border-radius: 2rem;
+        font-weight: 600;
+        background: none;
+        color: $white;
+        font-size: 1.1rem;
+    }
+
+    @media (max-width: 320px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
