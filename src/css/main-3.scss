@@ -11,7 +11,7 @@ $breakpoint-desktop: 900px;
 @import './colours.scss';
 
 .main_3 {
-    margin-top: 2rem;
+    margin: 3rem 0;
     font-family: 'Overpass', sans-serif;
     text-align: center;
 
@@ -27,6 +27,7 @@ $breakpoint-desktop: 900px;
         @media (max-width: 370px) {
             width: 17rem;
             height: 17rem;
+            background-size: 150%;
         }
     }
 

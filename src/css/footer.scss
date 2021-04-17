@@ -1,0 +1,52 @@
+/* 
+
+font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif; 
+
+*/
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 900px;
+
+@import './colours.scss';
+
+footer {
+    background-color: $vdrblackblue;
+    text-align: center;
+    border-top-right-radius: 4rem;
+
+    .blogr__logo_2 {
+        background-image: url("../images/logo.svg");
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: center;
+        width: 17rem;
+        height: 4rem;
+        margin-top: 2rem;
+    }
+
+    .footer_item {
+        color: $white;
+        font-family: 'Overpass', sans-serif;
+        margin-top: 3rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+        font-weight: 800;
+    }
+    
+    ul {
+        padding: 1rem;
+
+        li {
+            padding: 0.5rem;
+        
+            a {
+                text-decoration: none;
+                color: $white;
+                font-size: 1rem;
+            }
+        }
+    }
+}
