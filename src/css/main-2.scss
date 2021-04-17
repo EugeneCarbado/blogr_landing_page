@@ -1,0 +1,53 @@
+/* 
+
+font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif; 
+
+*/
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 900px;
+
+@import './colours.scss';
+
+.main_2 {
+    margin-top: 15rem;
+    font-family: 'Overpass', sans-serif;
+    color: $white;
+    background-color: $vdrgreyblue;
+    background-image: url("../images/bg-pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: 155%;
+    background-position: center -347%;
+    border-radius: 0 7rem 0;
+
+    .phones_img {
+        background-image: url("../images/illustration-phones.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        transform: translateY(-46%);
+    }
+
+    .main_text_container_2 {
+        text-align: center;
+        transform: translateY(-60%);
+
+        @media (max-width: 370px) {
+            transform: translateY(-30%);
+        }
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin: 1rem;
+        line-height: 2.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin: 0 1.4rem;
+        line-height: 1.7rem;
+    }
+}
