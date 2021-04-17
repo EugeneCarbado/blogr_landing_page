@@ -21,12 +21,23 @@ $breakpoint-desktop: 900px;
     background-position: center -347%;
     border-radius: 0 7rem 0;
 
+    @media (max-width: 370px) {
+        background-position: center -0%;
+    }
+
     .phones_img {
         background-image: url("../images/illustration-phones.svg");
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
         transform: translateY(-46%);
+        width: 23rem;
+        height: 23rem;
+
+        @media (max-width: 370px) {
+            width: 17rem;
+            height: 17rem;
+        }
     }
 
     .main_text_container_2 {

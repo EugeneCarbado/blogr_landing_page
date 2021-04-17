@@ -1,0 +1,48 @@
+/* 
+
+font-family: 'Overpass', sans-serif;
+font-family: 'Ubuntu', sans-serif; 
+
+*/
+
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 900px;
+
+@import './colours.scss';
+
+.main_3 {
+    margin-top: 2rem;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+
+    .computer_img {
+        background-image: url("../images/illustration-laptop-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: 130%;
+        background-position: center;
+        width: 23rem;
+        height: 23rem;
+        
+
+        @media (max-width: 370px) {
+            width: 17rem;
+            height: 17rem;
+        }
+    }
+
+    .main_text_container_3 {
+        margin-top: 2rem;
+
+        h2 {
+            font-size: 1.7rem;
+
+        }
+    
+        p {
+            color: $greyishblue2;
+            font-size: 1.1rem;
+            padding: 2rem 1.3rem;
+            line-height: 1.5rem;
+        }
+    }
+}
