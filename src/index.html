@@ -11,24 +11,61 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
     rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
   <title>Frontend Mentor | [Blogr]</title>
 </head>
 
 <body>
-  <div class="header__container">
-    <div class="nav__container">
-      <div class="blogr__logo"></div>
-      <nav class="nav__bar">
-        <div class="hamburger"></div>
-        <!-- <ul class="nav__ul">
-        <li><a href="">/product</a></li>
-        <li><a href="">Company</a></li>
-        <li><a href="">Connect</a></li>
-      </ul> -->
+  <header>
+    <div class="header__container">
+      <nav class="nav">
+        <div class="nav_items_left">
+          <svg class="blogr__logo"></svg>
+        </div>
+        <div class="nav_items_right">
+          <svg class="hamburger"></svg>
+          <div class="nav__bar">
+            <div class="nav__item">
+              <p class="nav_head_title">Product<i class="fas fa-chevron-down"></i></p>
+              <div class="sub_item">
+                <a href="#">Overview</a>
+                <a href="#">Pricing</a>
+                <a href="#">Marketplace</a>
+                <a href="#">Features</a>
+                <a href="#">Integrations</a>
+              </div>
+            </div>
+            <div class="nav__item">
+              <p class="nav_head_title">Company<i class="fas fa-chevron-down"></i></p>
+              <div class="sub_item">
+                <a href="#">About</a>
+                <a href="#">Team</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+              </div>
+            </div>
+            <div class="nav__item">
+              <p class="nav_head_title">Connect<i class="fas fa-chevron-down"></i></p>
+              <div class="sub_item">
+                <a href="#">Contact</a>
+                <a href="#">Newsletter</a>
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+            <hr class="line__break">
+            <div class="mobile_buttons">
+              <a href="" class="mobile_login">Login</a>
+              <a href="" class="mobile_sign_up">Sign Up</a>
+            </div>
+          </div>
+        </div>
+
       </nav>
     </div>
-  </div>
+  </header>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
