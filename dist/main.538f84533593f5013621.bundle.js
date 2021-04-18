@@ -1,2 +1,0 @@
-(()=>{"use strict";window.getElementById("hamburger").addEventListener("click",(function(){const e=document.getElementById("nav_bar");"none"==e.style.display?e.style.display="block":e.style.display="none"}))})();
-//# sourceMappingURL=main.538f84533593f5013621.bundle.js.map
