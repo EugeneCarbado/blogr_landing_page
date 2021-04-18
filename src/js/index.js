@@ -5,3 +5,7 @@ import "../css/main-3.scss";
 import "../css/footer.scss";
 import "../css/reset.scss";
 import "../css/colours.scss";
+
+import { showNav } from "../js/app";
+
+export { showNav };
