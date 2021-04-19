@@ -1,0 +1,2 @@
+(()=>{"use strict";document.getElementsByName("subItem"),document.querySelectorAll("nav_head_title");document.getElementById("hamburger").addEventListener("click",(function(){document.getElementById("nav_bar").classList.toggle("burger_active")}))})();
+//# sourceMappingURL=main.08a42dd2c38749ac1c0b.bundle.js.map

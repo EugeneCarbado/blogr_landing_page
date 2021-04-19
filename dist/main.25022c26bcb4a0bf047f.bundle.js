@@ -1,2 +1,0 @@
-(()=>{"use strict";document.getElementsByName("subItem"),document.getElementsByClassName("nav_head_title");document.getElementById("hamburger").addEventListener("click",(function(){document.getElementById("nav_bar").classList.toggle("burger_active")}))})();
-//# sourceMappingURL=main.25022c26bcb4a0bf047f.bundle.js.map
