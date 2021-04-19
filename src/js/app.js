@@ -9,7 +9,9 @@ function showNav() {
 }
 
 function showSubMenu(e) {
+    console.log(e);
     e.target.nextElementSibling.classList.toggle('sub_item_active');
+    e.target.firstElementChild.classList.toggle('rotate');
 }
 
 export { showNav, showSubMenu }
