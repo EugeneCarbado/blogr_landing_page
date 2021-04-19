@@ -1,4 +1,5 @@
 const subItem = document.getElementsByName("subItem");
+const navItem = document.getElementsByClassName("nav_head_title");
 
 
 document.getElementById('hamburger').addEventListener('click', showNav);
