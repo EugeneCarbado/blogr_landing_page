@@ -1,30 +1,30 @@
 const subItem = document.getElementsByName("subItem");
-const navItem = document.querySelectorAll(".nav_head_title");
+// const navSingleItem = document.querySelector(".nav__bar");
+// const navItem = document.getElementsByName("navItemHeading");
+const navMenu = document.getElementById('nav_bar');
 
 
 document.getElementById('hamburger').addEventListener('click', showNav);
 
 function showNav() {
-    
-    const navMenu = document.getElementById('nav_bar');
     navMenu.classList.toggle('burger_active');
 }
 
+// navMenu.addEventListener('click', showSubMenu);
 
+// function showSubMenu() {
+//     console.log("clicked!");
+//     for (let i = 0; i < subItem.length; i++) {
+//         subItem[i].nextElementSibling.classList.toggle('sub_item_active');
+//     }
+// }
 
-// document.addEventListener('click', showSubMenu);
+// if (window.innerWidth < 900) {
+//     for (let i = 0; i < subItem.length; i++) {
+//         subItem[i].addEventListener('click', function() {
+//             subItem[i].nextElementSibling.classList.toggle('sub_item_active');
+//         })
+//     }
+// }
 
-function showSubMenu() {
-    // if (window.innerWidth < 900) {
-    //     this.children[1].classList.toggle('sub_item_active');
-    // }
-    // if (window.innerWidth < 900) {
-    //     for (let i = 0; i < navItem.length; i++) {
-    //         navItem[i].addEventListener('click', function() {
-    //             navItem[i].nextElementSibling.classList.toggle('sub_item_active');
-    //         })
-    //     }
-    // }
-}
-
-export { showNav, showSubMenu }
+export { showNav }
