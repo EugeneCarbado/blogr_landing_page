@@ -22,23 +22,37 @@ header {
     background-size: 90rem;
     margin: 0 auto;
     height: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     background-position: 38% 33%;
     border-radius: 0 0 0 5rem;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .nav__container {
+    margin: 0 auto;
     padding: 4rem 1.5rem 1.5rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+
+    @media (min-width: $breakpoint-desktop) {
+    }
 }
 
 .blogr__logo {
     background: url("../images/logo.svg") no-repeat;
     width: 7rem;
     height: 2.5rem;
+}
+
+.nav_items_left {
+}
+
+.nav_items_right {
+    @media (min-width: $breakpoint-desktop) {
+        width: 63rem;
+    }
 }
 
 .hamburger__img {
@@ -62,10 +76,22 @@ header {
     border-radius: 0.5rem;
     -webkit-box-shadow: 0px 14px 32px 10px rgba(0,0,0,0.14); 
     box-shadow: 0px 14px 32px 10px rgba(0,0,0,0.14);
-    transition: 5s ease-in-out;
+    
 
     @media (max-width: 320px) {
-        top: 25%;
+       top: 25%;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: none;
+        box-shadow: none;
+        top: 0px;
+        width: 100%;
+        left: 0px;
+        position: unset;
     }
 }
 
@@ -77,6 +103,15 @@ header {
     text-align: center;
     padding: 1.5rem;
     font-size: 1.3rem;
+}
+
+.nav__items {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+    }
 }
 
 .sub_item {
@@ -98,6 +133,13 @@ header {
     }
 }
 
+.nav_head_title {
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        color: $white;
+    }
+}
+
 .sub_item_active {
     display: flex;
 }
@@ -107,6 +149,10 @@ header {
     margin-left: 0.4rem;
     color: $ltred2;
     transition: all 0.2s linear;
+
+    @media (min-width: $breakpoint-desktop) {
+        color: $white;
+    }
 }
 
 .rotate {
@@ -121,6 +167,10 @@ header {
     height: 1px;
     color: $ltred2;
     margin-top: 2rem;
+
+    @media (min-width: $breakpoint-desktop) {
+        display: none;
+    }
 }
 
 .mobile_buttons {
@@ -128,6 +178,10 @@ header {
     flex-direction: column;
     align-items: center;
     margin: 1rem;
+
+    @media (min-width: $breakpoint-desktop) {
+        flex-direction: row;
+    }
 }
 
 .mobile_login {
@@ -135,6 +189,10 @@ header {
     color: $vdrblackblue;
     font-size: 1.3rem;
     margin: 1rem;
+
+    @media (min-width: $breakpoint-desktop) {
+        color: $white;
+    }
 }
 
 .mobile_sign_up {
@@ -151,6 +209,11 @@ header {
     color: $white;
     background: linear-gradient(to right, $vltred2, $ltred2);
     border-radius: 2rem;
+
+    @media (min-width: $breakpoint-desktop) {
+        background: $white;
+        color: $ltred2;
+    }
 }
 
 .hero__section {

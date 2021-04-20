@@ -1,2 +1,0 @@
-(()=>{"use strict";function e(e){console.log(e),e.target.nextElementSibling.classList.toggle("sub_item_active"),e.target.firstElementChild.classList.toggle("rotate")}document.getElementById("hamburger").addEventListener("click",(function(){document.getElementById("nav_bar").classList.toggle("burger_active")})),document.getElementById("product").addEventListener("click",e),document.getElementById("company").addEventListener("click",e),document.getElementById("connect").addEventListener("click",e)})();
-//# sourceMappingURL=main.0f368b09f3ae373b7f14.bundle.js.map
