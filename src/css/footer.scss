@@ -10,10 +10,11 @@ $breakpoint-desktop: 900px;
 
 @import './colours.scss';
 
-footer {
+.footer_container {
     background-color: $vdrblackblue;
     text-align: center;
     border-top-right-radius: 5rem;
+    padding: 2rem 0rem ;
 
     .blogr__logo_2 {
         background-image: url("../images/logo.svg");
@@ -41,6 +42,13 @@ footer {
 
         li {
             padding: 0.5rem;
+
+            @media (min-width: $breakpoint-desktop) {
+                padding: 0.5rem 0.5rem 0.5rem 0rem ;
+                :hover {
+                    font-weight: 700;
+                }
+            }
         
             a {
                 text-decoration: none;
@@ -48,5 +56,17 @@ footer {
                 font-size: 1rem;
             }
         }
+
+        @media (min-width: $breakpoint-desktop) {
+            padding: 1rem 1rem 1rem 0rem ;
+        }
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-right: 12rem;
+        text-align: left;
     }
 }

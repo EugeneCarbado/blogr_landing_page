@@ -10,18 +10,21 @@ $breakpoint-desktop: 900px;
 
 @import './colours.scss';
 
+body, html {
+    overflow-x: hidden;
+}
+
 .main_1 {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     font-family: 'Overpass', sans-serif;
-    margin-top: 6rem;
+    margin-top: 6rem; 
 
     h2 {
         text-align: center;
         font-size: 1.8rem;
         margin: 1rem 2rem 2rem 2rem;
         line-height: 1.8rem;
+        z-index: 0;
     }
 
     .main_item_1 {
@@ -31,6 +34,11 @@ $breakpoint-desktop: 900px;
             font-size: 1.8rem;
             margin: 3rem 4rem 1rem 4rem;
             line-height: 1.8rem;
+
+            @media (min-width: $breakpoint-desktop) {
+                text-align: left;
+                margin: 3rem 4rem 1rem 1.8rem;
+            }
         }
     
         p {
@@ -39,7 +47,31 @@ $breakpoint-desktop: 900px;
             font-size: 1.1rem;
             margin: 1rem 1.8rem 1rem 1.8rem;
             line-height: 1.8rem;
+
+            @media (min-width: $breakpoint-desktop) {
+                text-align: left;
+            }
         }
+    }
+}
+
+.main_text_container {
+    @media (min-width: $breakpoint-desktop) {
+        width: 40rem;
+        z-index: 0;
+        margin-left: 9rem;
+    }
+}
+
+.img_article_container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-desktop) {
+        margin: 0 auto;
+        /* max-width: 1200px; */
+        flex-direction: row;
+        align-items: center;
     }
 }
 
@@ -57,6 +89,16 @@ $breakpoint-desktop: 900px;
         background-size: contain;
         width: 17rem;
         height: 15rem;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        background-image: url("../images/illustration-editor-desktop.svg");
+        position: absolute;
+        background-size: 44rem;
+        transform: translateX(135%);
+        width: 43rem;
+        height: 42rem;
+        z-index: 10;
     }
 }
 

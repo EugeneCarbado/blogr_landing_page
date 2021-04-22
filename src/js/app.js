@@ -9,10 +9,10 @@ function showNav() {
 }
 
 function showSubMenu(e) {
-    if ( window.innerWidth < 900) {
+   if ( window.innerWidth < 900) {
         e.target.nextElementSibling.classList.toggle('sub_item_active');
     e.target.firstElementChild.classList.toggle('rotate');
-    }
+   }
 }
 
 export { showNav, showSubMenu }

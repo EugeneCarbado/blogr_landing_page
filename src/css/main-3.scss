@@ -29,6 +29,17 @@ $breakpoint-desktop: 900px;
             height: 17rem;
             background-size: 150%;
         }
+
+        @media (min-width: $breakpoint-desktop) {
+            background-image: url("../images/illustration-laptop-desktop.svg");
+            position: absolute;
+            background-size: 120%;
+            background-position: center;
+            width: 40rem;
+            height: 41rem;
+            transform: translateY(-3%);
+            left: -7rem;
+        }
     }
 
     .main_text_container_3 {
@@ -44,6 +55,22 @@ $breakpoint-desktop: 900px;
             font-size: 1.1rem;
             padding: 2rem 1.3rem;
             line-height: 1.5rem;
+
+            @media (min-width: $breakpoint-desktop) {
+                padding: 2rem 0rem;
+            }
         }
+
+        @media (min-width: $breakpoint-desktop) {
+            text-align: left;
+            width: 51rem;
+            padding: 8rem 6rem 6rem 6rem;
+        }
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 10rem 0;
     }
 }

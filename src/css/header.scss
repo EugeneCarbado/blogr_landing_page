@@ -13,7 +13,7 @@ $breakpoint-desktop: 900px;
 header {
     width: 100vw;
     height: 38rem;
-    background-image: linear-gradient($vltred2, $ltred2);
+    background-image: linear-gradient(to right, $vltred2, $ltred2);
     border-radius: 0 0 0 5rem;
 }
 
@@ -22,10 +22,14 @@ header {
     background-size: 90rem;
     margin: 0 auto;
     height: 100%;
-    /* max-width: 1200px; */
     background-position: 38% 33%;
     border-radius: 0 0 0 5rem;
     font-family: 'Ubuntu', sans-serif;
+
+    @media (min-width: $breakpoint-desktop) {
+        background-size: 190rem;
+        background-position: 30% 52%;
+    }
 }
 
 .nav__container {
@@ -35,18 +39,12 @@ header {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-
-    @media (min-width: $breakpoint-desktop) {
-    }
 }
 
 .blogr__logo {
     background: url("../images/logo.svg") no-repeat;
     width: 7rem;
     height: 2.5rem;
-}
-
-.nav_items_left {
 }
 
 .nav_items_right {
@@ -101,7 +99,7 @@ header {
 
 .nav_head_title {
     text-align: center;
-    padding: 1.5rem;
+    margin: 1.5rem;
     font-size: 1.3rem;
 }
 
@@ -111,6 +109,26 @@ header {
 
     @media (min-width: $breakpoint-desktop) {
         flex-direction: row;
+    }
+}
+
+.nav__item:hover .nav_head_title{
+    @media (min-width: $breakpoint-desktop) {
+        border-bottom: 2px solid $white;
+        font-weight: 600;
+    }
+}
+
+.nav__item:hover .sub_item {
+
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        position: absolute;
+        width: 15%;
+        background-color: #f1f1f1;
+        z-index: 1;
+        -webkit-box-shadow: 0px 14px 32px 10px rgba(0,0,0,0.14); 
+        box-shadow: 0px 14px 32px 10px rgba(0,0,0,0.14);
     }
 }
 
@@ -130,6 +148,14 @@ header {
         color: $vdrblackblue;
         font-size: 1.3rem;
         padding: 1rem;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        align-items: flex-start;
+    }
+
+    :hover {
+        font-weight: 600;
     }
 }
 
@@ -152,6 +178,10 @@ header {
 
     @media (min-width: $breakpoint-desktop) {
         color: $white;
+        display: flex;
+        align-items: center;
+        padding-left: 0.2rem;
+        padding-top: 0.2rem;
     }
 }
 
@@ -209,11 +239,17 @@ header {
     color: $white;
     background: linear-gradient(to right, $vltred2, $ltred2);
     border-radius: 2rem;
+    transition: 0.1s ease-in-out;
 
     @media (min-width: $breakpoint-desktop) {
         background: $white;
         color: $ltred2;
     }
+}
+
+.mobile_sign_up:hover {
+    background: $vltred;
+    color: $white;
 }
 
 .hero__section {
@@ -232,12 +268,21 @@ header {
             margin: 0 1.6rem 1.5rem 1.6rem;
             font-weight: 600;
             line-height: 2.7rem;
+
+            @media (min-width: $breakpoint-desktop) {
+                font-size: 3.6rem;
+            }
         }
 
         h3 {
             font-size: 1.2rem;
             margin: 0 1.6rem 0 1.6rem;
             line-height: 1.3rem;
+
+            @media (min-width: $breakpoint-desktop) {
+                font-size: 1.6rem;
+                padding-top: 1.4rem;
+            }
         }
     }
 }
@@ -256,6 +301,8 @@ header {
         border-radius: 2rem;
         font-weight: 600;
         font-size: 1.1rem;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
     }
 
     .learn_more {
@@ -268,10 +315,22 @@ header {
         background: none;
         color: $white;
         font-size: 1.1rem;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
     }
 
     @media (max-width: 320px) {
         display: flex;
         flex-direction: column;
     }
+}
+
+.start_for_free:hover {
+    background: $vltred;
+    color: $white;
+}
+
+.learn_more:hover {
+    background: $white;
+    color: $ltred;
 }
